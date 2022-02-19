@@ -6,12 +6,18 @@ body {
     background: url('/media/background-image.png') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #555;
-    font-family: 'Lato';
+    color: #fff;
+    font-family:'Rubik';
 }
 
-.quote-font{
-    color: #fff !important;
+a {
+    color: #fff;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #cc9933;
 }
 
 /* From Bulma */
