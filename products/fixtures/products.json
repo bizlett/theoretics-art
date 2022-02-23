@@ -9,7 +9,7 @@
             "dimensions": "100 cm x 50 cm", 
             "price": 175.00,
             "category": 1, 
-            "image": "birds-in-flight.jpg"
+            "image": "/art/birds-in-flight.jpg"
         }
     },
     {
@@ -22,7 +22,7 @@
             "dimensions": "70 cm x 70 cm", 
             "price": 175.00,
             "category": 1, 
-            "image": "catherine-wheel.jpg"
+            "image": "/art/catherine-wheel.jpg"
         }
     },
     {
@@ -35,7 +35,7 @@
             "dimensions": "30 cm x 30 cm", 
             "price": 100.00,
             "category": 1, 
-            "image": "wings.jpg"
+            "image": "/art/wings.jpg"
         }
     },
     {
@@ -48,7 +48,7 @@
             "dimensions": "70 cm x 70 cm", 
             "price": 174.00,
             "category": 1, 
-            "image": "cosmic.jpg"
+            "image": "/art/cosmic.jpg"
         }
     },
     {
@@ -61,7 +61,7 @@
             "dimensions": "70 cm x 70 cm", 
             "price": 175.00,
             "category": 1, 
-            "image": "eye-opening.jpg"
+            "image": "/art/eye-opening.jpg"
         }
     },
     {
@@ -74,7 +74,7 @@
             "dimensions": "100 cm x 100 cm", 
             "price": 275.00,
             "category": 1, 
-            "image": "fire.jpg"
+            "image": "/art/fire.jpg"
         }
     },
     {
@@ -87,7 +87,7 @@
             "dimensions": "50 cm x 70 cm", 
             "price": 150.00,
             "category": 1, 
-            "image": "grello.jpg"
+            "image": "/art/grello.jpg"
         }
     },
     {
@@ -100,7 +100,7 @@
             "dimensions": "50 cm x 60 cm", 
             "price": 100.00,
             "category": 1, 
-            "image": "headlights.jpg"
+            "image": "/art/headlights.jpg"
         }
     },
     {
@@ -113,7 +113,7 @@
             "dimensions": "50 cm x 100 cm", 
             "price": 175.00,
             "category": 1, 
-            "image": "hearts.jpg"
+            "image": "/art/hearts.jpg"
         }
     },
     {
@@ -126,7 +126,7 @@
             "dimensions": "50 cm x 60 cm", 
             "price": 100.00,
             "category": 1, 
-            "image": "squiggle.jpg"
+            "image": "/art/squiggle.jpg"
         }
     },
     {
@@ -139,7 +139,7 @@
             "dimensions": "50 cm x 70 cm", 
             "price": 150.00,
             "category": 1, 
-            "image": "thatched-river.jpg"
+            "image": "/art/thatched-river.jpg"
         }
     },
     {
@@ -152,7 +152,7 @@
             "dimensions": "30 cm x 75 cm", 
             "price": 100.00,
             "category": 1, 
-            "image": "wings.jpg"
+            "image": "/art/wings.jpg"
         }
     },
     {
@@ -165,7 +165,7 @@
             "dimensions": "", 
             "price": 0.00,
             "category": 2, 
-            "image": "canisp-suilven.jpg"
+            "image": "/photography/canisp-suilven.jpg"
         }
     },
     {
@@ -178,7 +178,7 @@
             "dimensions": "", 
             "price": 0.00,
             "category": 2, 
-            "image": "dawn-chorus.jpg"
+            "image": "/photography/dawn-chorus.jpg"
         }
     },
     {
@@ -191,7 +191,7 @@
             "dimensions": "", 
             "price": 0.00,
             "category": 2, 
-            "image": "kylesku.jpg"
+            "image": "/photography/kylesku.jpg"
         }
     },
     {
@@ -204,7 +204,7 @@
             "dimensions": "", 
             "price": 0.00,
             "category": 2, 
-            "image": "pier-at-dawn.jpg"
+            "image": "/photography/pier-at-dawn.jpg"
         }
     },
     {
@@ -217,7 +217,7 @@
             "dimensions": "", 
             "price": 0.00,
             "category": 2, 
-            "image": "pink.jpg"
+            "image": "/photography/pink.jpg"
         }
     },
     {
@@ -230,7 +230,7 @@
             "dimensions": "", 
             "price": 0.00,
             "category": 2, 
-            "image": "sea-here.jpg"
+            "image": "/photography/sea-here.jpg"
         }
     },
     {
@@ -243,7 +243,7 @@
             "dimensions": "", 
             "price": 0.00,
             "category": 2, 
-            "image": "silhouette.jpg"
+            "image": "/photography/silhouette.jpg"
         }
     },
     {
@@ -256,7 +256,7 @@
             "dimensions": "", 
             "price": 0.00,
             "category": 2, 
-            "image": "wailing-wskuow.jpg"
+            "image": "/photography/wailing-wskuow.jpg"
         }
     },
     {
@@ -269,7 +269,7 @@
             "dimensions": "", 
             "price": 0.00,
             "category": 2, 
-            "image": "waiting.jpg"
+            "image": "/photography/waiting.jpg"
         }
     },
     {
@@ -282,7 +282,7 @@
             "dimensions": "", 
             "price": 0.00,
             "category": 2, 
-            "image": "wings-of-an-angel.jpg"
+            "image": "/photography/wings-of-an-angel.jpg"
         }
     }
 ]
