@@ -1,0 +1,288 @@
+[
+    {
+        "pk": 1, 
+        "model": "products.product", 
+        "fields": {
+            "id": "001", 
+            "name": "Birds in Flight", 
+            "description": "Spray paint on canvas", 
+            "dimensions": "100 cm x 50 cm", 
+            "price": 175.00,
+            "category": 1, 
+            "image": "birds-in-flight.jpg"
+        }
+    },
+    {
+        "pk": 2, 
+        "model": "products.product", 
+        "fields": {
+            "id": "002", 
+            "name": "Catherine Wheel", 
+            "description": "Spray paint on canvas", 
+            "dimensions": "70 cm x 70 cm", 
+            "price": 175.00,
+            "category": 1, 
+            "image": "catherine-wheel.jpg"
+        }
+    },
+    {
+        "pk": 3, 
+        "model": "products.product", 
+        "fields": {
+            "id": "003", 
+            "name": "City", 
+            "description": "Acrylic on canvas", 
+            "dimensions": "30 cm x 30 cm", 
+            "price": 100.00,
+            "category": 1, 
+            "image": "wings.jpg"
+        }
+    },
+    {
+        "pk": 4, 
+        "model": "products.product", 
+        "fields": {
+            "id": "004", 
+            "name": "Cosmic", 
+            "description": "Acrylic on canvas", 
+            "dimensions": "70 cm x 70 cm", 
+            "price": 174.00,
+            "category": 1, 
+            "image": "cosmic.jpg"
+        }
+    },
+    {
+        "pk": 5, 
+        "model": "products.product", 
+        "fields": {
+            "id": "005", 
+            "name": "Eye Opening", 
+            "description": "Acrylic on canvas", 
+            "dimensions": "70 cm x 70 cm", 
+            "price": 175.00,
+            "category": 1, 
+            "image": "eye-opening.jpg"
+        }
+    },
+    {
+        "pk": 6, 
+        "model": "products.product", 
+        "fields": {
+            "id": "006", 
+            "name": "Fire", 
+            "description": "Acrylic on canvas", 
+            "dimensions": "100 cm x 100 cm", 
+            "price": 275.00,
+            "category": 1, 
+            "image": "fire.jpg"
+        }
+    },
+    {
+        "pk": 7, 
+        "model": "products.product", 
+        "fields": {
+            "id": "007", 
+            "name": "Grello", 
+            "description": "Acrylic & spray paint on canvas", 
+            "dimensions": "50 cm x 70 cm", 
+            "price": 150.00,
+            "category": 1, 
+            "image": "grello.jpg"
+        }
+    },
+    {
+        "pk": 8, 
+        "model": "products.product", 
+        "fields": {
+            "id": "008", 
+            "name": "Headlights", 
+            "description": "Acrylic & spray paint on canvas", 
+            "dimensions": "50 cm x 60 cm", 
+            "price": 100.00,
+            "category": 1, 
+            "image": "headlights.jpg"
+        }
+    },
+    {
+        "pk": 9, 
+        "model": "products.product", 
+        "fields": {
+            "id": "009", 
+            "name": "Hearts", 
+            "description": "Spray paint on canvas", 
+            "dimensions": "50 cm x 100 cm", 
+            "price": 175.00,
+            "category": 1, 
+            "image": "hearts.jpg"
+        }
+    },
+    {
+        "pk": 10, 
+        "model": "products.product", 
+        "fields": {
+            "id": "010", 
+            "name": "Squiggle", 
+            "description": "Acrylic & spray paint on canvas", 
+            "dimensions": "50 cm x 60 cm", 
+            "price": 100.00,
+            "category": 1, 
+            "image": "squiggle.jpg"
+        }
+    },
+    {
+        "pk": 11, 
+        "model": "products.product", 
+        "fields": {
+            "id": "011", 
+            "name": "Thatched River", 
+            "description": "Acrylic & spray paint on canvas", 
+            "dimensions": "50 cm x 70 cm", 
+            "price": 150.00,
+            "category": 1, 
+            "image": "thatched-river.jpg"
+        }
+    },
+    {
+        "pk": 12, 
+        "model": "products.product", 
+        "fields": {
+            "id": "012", 
+            "name": "Wings (triptych)", 
+            "description": "Acrylic & spray paint on canvas", 
+            "dimensions": "30 cm x 75 cm", 
+            "price": 100.00,
+            "category": 1, 
+            "image": "wings.jpg"
+        }
+    }
+    {
+        "pk": 13, 
+        "model": "products.product", 
+        "fields": {
+            "id": "013", 
+            "name": "Canisp & Suilven", 
+            "description": "Reflections in water of Canisp and Suilven in the Scottish Highlands", 
+            "dimensions": "", 
+            "price": ,
+            "category": 2, 
+            "image": "canisp-suilven.jpg"
+        }
+    },
+    {
+        "pk": 14, 
+        "model": "products.product", 
+        "fields": {
+            "id": "014", 
+            "name": "Dawn Chorus", 
+            "description": "Sunrise at Dunnet Beach, Scottish Highlands", 
+            "dimensions": "", 
+            "price": ,
+            "category": 2, 
+            "image": "dawn-chorus.jpg"
+        }
+    },
+    {
+        "pk": 15, 
+        "model": "products.product", 
+        "fields": {
+            "id": "015", 
+            "name": "Kylesku", 
+            "description": "A view of Kylesku bridge, Scottish Highlands", 
+            "dimensions": "", 
+            "price": ,
+            "category": 2, 
+            "image": "kylesku.jpg"
+        }
+    },
+    {
+        "pk": 16, 
+        "model": "products.product", 
+        "fields": {
+            "id": "016", 
+            "name": "Pier at Dawn", 
+            "description": "Penarth pier at first light", 
+            "dimensions": "", 
+            "price": ,
+            "category": 2, 
+            "image": "pier-at-dawn.jpg"
+        }
+    },
+    {
+        "pk": 17, 
+        "model": "products.product", 
+        "fields": {
+            "id": "017", 
+            "name": "Pink", 
+            "description": "Sunrise pink over Bristol Channel", 
+            "dimensions": "", 
+            "price": ,
+            "category": 2, 
+            "image": "pink.jpg"
+        }
+    },
+    {
+        "pk": 18, 
+        "model": "products.product", 
+        "fields": {
+            "id": "018", 
+            "name": "Sea Here", 
+            "description": "Long exposure of tides under Penarth Pier", 
+            "dimensions": "", 
+            "price": ,
+            "category": 2, 
+            "image": "sea-here.jpg"
+        }
+    },
+    {
+        "pk": 19, 
+        "model": "products.product", 
+        "fields": {
+            "id": "019", 
+            "name": "Silhoutte", 
+            "description": "On the pier at Penarth", 
+            "dimensions": "", 
+            "price": ,
+            "category": 2, 
+            "image": "silhouette.jpg"
+        }
+    },
+    {
+        "pk": 20, 
+        "model": "products.product", 
+        "fields": {
+            "id": "020", 
+            "name": "Wailing Widow", 
+            "description": "The powerful Wailing Widow waterfall in the Scottish Highlands", 
+            "dimensions": "", 
+            "price": ,
+            "category": 2, 
+            "image": "wailing-widow.jpg"
+        }
+    },
+    {
+        "pk": 21, 
+        "model": "products.product", 
+        "fields": {
+            "id": "021", 
+            "name": "Waiting", 
+            "description": "Onlookers wait for the swimmers to emerge from the sea at Penarth seafront", 
+            "dimensions": "", 
+            "price": ,
+            "category": 2, 
+            "image": "waiting.jpg"
+        }
+    },
+    {
+        "pk": 22, 
+        "model": "products.product", 
+        "fields": {
+            "id": "022", 
+            "name": "On the Wings of an Angel", 
+            "description": "A biblical cloud formation at Lyn y Fan Fach, Wales", 
+            "dimensions": "", 
+            "price": ,
+            "category": 2, 
+            "image": "wings-of-an-angel.jpg"
+        }
+    }
+]
