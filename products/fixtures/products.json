@@ -3,7 +3,7 @@
         "pk": 1, 
         "model": "products.product", 
         "fields": {
-            "id": "001", 
+            "sku": "001", 
             "name": "Birds in Flight", 
             "description": "Spray paint on canvas", 
             "dimensions": "100 cm x 50 cm", 
@@ -16,7 +16,7 @@
         "pk": 2, 
         "model": "products.product", 
         "fields": {
-            "id": "002", 
+            "sku": "002", 
             "name": "Catherine Wheel", 
             "description": "Spray paint on canvas", 
             "dimensions": "70 cm x 70 cm", 
@@ -29,7 +29,7 @@
         "pk": 3, 
         "model": "products.product", 
         "fields": {
-            "id": "003", 
+            "sku": "003", 
             "name": "City", 
             "description": "Acrylic on canvas", 
             "dimensions": "30 cm x 30 cm", 
@@ -42,7 +42,7 @@
         "pk": 4, 
         "model": "products.product", 
         "fields": {
-            "id": "004", 
+            "sku": "004", 
             "name": "Cosmic", 
             "description": "Acrylic on canvas", 
             "dimensions": "70 cm x 70 cm", 
@@ -55,7 +55,7 @@
         "pk": 5, 
         "model": "products.product", 
         "fields": {
-            "id": "005", 
+            "sku": "005", 
             "name": "Eye Opening", 
             "description": "Acrylic on canvas", 
             "dimensions": "70 cm x 70 cm", 
@@ -68,7 +68,7 @@
         "pk": 6, 
         "model": "products.product", 
         "fields": {
-            "id": "006", 
+            "sku": "006", 
             "name": "Fire", 
             "description": "Acrylic on canvas", 
             "dimensions": "100 cm x 100 cm", 
@@ -81,7 +81,7 @@
         "pk": 7, 
         "model": "products.product", 
         "fields": {
-            "id": "007", 
+            "sku": "007", 
             "name": "Grello", 
             "description": "Acrylic & spray paint on canvas", 
             "dimensions": "50 cm x 70 cm", 
@@ -94,7 +94,7 @@
         "pk": 8, 
         "model": "products.product", 
         "fields": {
-            "id": "008", 
+            "sku": "008", 
             "name": "Headlights", 
             "description": "Acrylic & spray paint on canvas", 
             "dimensions": "50 cm x 60 cm", 
@@ -107,7 +107,7 @@
         "pk": 9, 
         "model": "products.product", 
         "fields": {
-            "id": "009", 
+            "sku": "009", 
             "name": "Hearts", 
             "description": "Spray paint on canvas", 
             "dimensions": "50 cm x 100 cm", 
@@ -120,7 +120,7 @@
         "pk": 10, 
         "model": "products.product", 
         "fields": {
-            "id": "010", 
+            "sku": "010", 
             "name": "Squiggle", 
             "description": "Acrylic & spray paint on canvas", 
             "dimensions": "50 cm x 60 cm", 
@@ -133,7 +133,7 @@
         "pk": 11, 
         "model": "products.product", 
         "fields": {
-            "id": "011", 
+            "sku": "011", 
             "name": "Thatched River", 
             "description": "Acrylic & spray paint on canvas", 
             "dimensions": "50 cm x 70 cm", 
@@ -146,7 +146,7 @@
         "pk": 12, 
         "model": "products.product", 
         "fields": {
-            "id": "012", 
+            "sku": "012", 
             "name": "Wings (triptych)", 
             "description": "Acrylic & spray paint on canvas", 
             "dimensions": "30 cm x 75 cm", 
@@ -154,16 +154,16 @@
             "category": 1, 
             "image": "wings.jpg"
         }
-    }
+    },
     {
         "pk": 13, 
         "model": "products.product", 
         "fields": {
-            "id": "013", 
+            "sku": "013", 
             "name": "Canisp & Suilven", 
             "description": "Reflections in water of Canisp and Suilven in the Scottish Highlands", 
             "dimensions": "", 
-            "price": ,
+            "price": 0.00,
             "category": 2, 
             "image": "canisp-suilven.jpg"
         }
@@ -172,11 +172,11 @@
         "pk": 14, 
         "model": "products.product", 
         "fields": {
-            "id": "014", 
+            "sku": "014", 
             "name": "Dawn Chorus", 
             "description": "Sunrise at Dunnet Beach, Scottish Highlands", 
             "dimensions": "", 
-            "price": ,
+            "price": 0.00,
             "category": 2, 
             "image": "dawn-chorus.jpg"
         }
@@ -185,11 +185,11 @@
         "pk": 15, 
         "model": "products.product", 
         "fields": {
-            "id": "015", 
+            "sku": "015", 
             "name": "Kylesku", 
-            "description": "A view of Kylesku bridge, Scottish Highlands", 
+            "description": "A view of Kylesku brskuge, Scottish Highlands", 
             "dimensions": "", 
-            "price": ,
+            "price": 0.00,
             "category": 2, 
             "image": "kylesku.jpg"
         }
@@ -198,11 +198,11 @@
         "pk": 16, 
         "model": "products.product", 
         "fields": {
-            "id": "016", 
+            "sku": "016", 
             "name": "Pier at Dawn", 
             "description": "Penarth pier at first light", 
             "dimensions": "", 
-            "price": ,
+            "price": 0.00,
             "category": 2, 
             "image": "pier-at-dawn.jpg"
         }
@@ -211,11 +211,11 @@
         "pk": 17, 
         "model": "products.product", 
         "fields": {
-            "id": "017", 
+            "sku": "017", 
             "name": "Pink", 
             "description": "Sunrise pink over Bristol Channel", 
             "dimensions": "", 
-            "price": ,
+            "price": 0.00,
             "category": 2, 
             "image": "pink.jpg"
         }
@@ -224,11 +224,11 @@
         "pk": 18, 
         "model": "products.product", 
         "fields": {
-            "id": "018", 
+            "sku": "018", 
             "name": "Sea Here", 
-            "description": "Long exposure of tides under Penarth Pier", 
+            "description": "Long exposure of tskues under Penarth Pier", 
             "dimensions": "", 
-            "price": ,
+            "price": 0.00,
             "category": 2, 
             "image": "sea-here.jpg"
         }
@@ -237,11 +237,11 @@
         "pk": 19, 
         "model": "products.product", 
         "fields": {
-            "id": "019", 
+            "sku": "019", 
             "name": "Silhoutte", 
             "description": "On the pier at Penarth", 
             "dimensions": "", 
-            "price": ,
+            "price": 0.00,
             "category": 2, 
             "image": "silhouette.jpg"
         }
@@ -250,24 +250,24 @@
         "pk": 20, 
         "model": "products.product", 
         "fields": {
-            "id": "020", 
-            "name": "Wailing Widow", 
-            "description": "The powerful Wailing Widow waterfall in the Scottish Highlands", 
+            "sku": "020", 
+            "name": "Wailing Wskuow", 
+            "description": "The powerful Wailing Wskuow waterfall in the Scottish Highlands", 
             "dimensions": "", 
-            "price": ,
+            "price": 0.00,
             "category": 2, 
-            "image": "wailing-widow.jpg"
+            "image": "wailing-wskuow.jpg"
         }
     },
     {
         "pk": 21, 
         "model": "products.product", 
         "fields": {
-            "id": "021", 
+            "sku": "021", 
             "name": "Waiting", 
             "description": "Onlookers wait for the swimmers to emerge from the sea at Penarth seafront", 
             "dimensions": "", 
-            "price": ,
+            "price": 0.00,
             "category": 2, 
             "image": "waiting.jpg"
         }
@@ -276,11 +276,11 @@
         "pk": 22, 
         "model": "products.product", 
         "fields": {
-            "id": "022", 
+            "sku": "022", 
             "name": "On the Wings of an Angel", 
             "description": "A biblical cloud formation at Lyn y Fan Fach, Wales", 
             "dimensions": "", 
-            "price": ,
+            "price": 0.00,
             "category": 2, 
             "image": "wings-of-an-angel.jpg"
         }
