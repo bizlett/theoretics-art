@@ -8,6 +8,7 @@ class CategoryAdmin(admin.ModelAdmin):
         'friendly_name'
     )
 
+
 class ProductAdmin(admin.ModelAdmin):
     list_display = (
         'sku',
@@ -18,6 +19,7 @@ class ProductAdmin(admin.ModelAdmin):
     )
 
     ordering = ('sku',)
+
 
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Product, ProductAdmin)
