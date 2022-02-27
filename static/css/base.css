@@ -10,14 +10,41 @@ body {
     font-family:'Rubik', sans-serif;
 }
 
-a {
-    color: #fff;
+ a {
+    color: #fff !important;
 }
 
 a:hover,
 a:active,
 a:focus {
-    color: #cc9933;
+    color: #cc9933 !important;
+}
+
+.active {
+    text-decoration: underline !important;
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: transparent;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 1rem;
+    text-align: left;
+    list-style: none;
+    background-color: transparent;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 0.25rem;
 }
 
 /* From Bulma */
@@ -41,6 +68,21 @@ a:focus {
 .visit-shop-button:focus {
     background: #fff;
     color: #cc9933;
+}
+
+/* Navbar */
+
+.navbar {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0rem 1rem;
 }
 
 /* Media Queries */
