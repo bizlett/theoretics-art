@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Category, Product, ProductVariation
+from .models import Category, Product, Variation
 
 
 class CategoryAdmin(admin.ModelAdmin):
@@ -21,7 +21,7 @@ class ProductAdmin(admin.ModelAdmin):
     ordering = ('sku',)
 
 
-class ProductVariationAdmin(admin.ModelAdmin):
+class VariationAdmin(admin.ModelAdmin):
     list_display = (
         'product',
         'price',
@@ -31,5 +31,4 @@ class ProductVariationAdmin(admin.ModelAdmin):
 
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Product, ProductAdmin)
-
-admin.site.register(ProductVariation, ProductVariationAdmin)
+admin.site.register(Variation, VariationAdmin)

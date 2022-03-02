@@ -31,8 +31,9 @@ class Product(models.Model):
         return self.name
 
 
-class ProductVariation(models.Model):
-    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+class Variation(models.Model):
+    product = models.ForeignKey(
+        'Product', null=True, blank=True, on_delete=models.CASCADE)
     sku = models.CharField(max_length=254, null=True, blank=True)
     size = models.CharField(max_length=254)
     price = models.DecimalField(
