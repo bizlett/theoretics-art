@@ -49,13 +49,13 @@
                                         {% if product.dimensions %}
                                             <small class="text-muted">{{ product.dimensions }}</small>
                                         {% else %}
-                                        <form class="form" method="GET" action="">
-                                            <select name="size" class="form-control">
-                                                {% for size in sizes %}
-                                                    <option value="{{ product.size }}">{{ product.size }}</option>
-                                                {% endfor %}
-                                            </select>
-                                        </form>
+                                            <form class="form" method="GET" action="">
+                                                <select name="size" class="form-control">
+                                                    {% for product in product.variation_set.all %}
+                                                        <option value="{{ product.size }}">{{ product.size }}</option>
+                                                    {% endfor %}
+                                                </select>  
+                                            </form>
                                         {% endif %}
                                         <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
                                     </div>
