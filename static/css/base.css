@@ -10,6 +10,10 @@ body {
     font-family:'Rubik', sans-serif;
 }
 
+.text-white {
+    color: #fff;
+}
+
  a {
     color: #fff !important;
 }
@@ -45,6 +49,10 @@ a:focus {
     background-clip: padding-box;
     border: 1px solid rgba(0,0,0,.15);
     border-radius: 0.25rem;
+}
+
+.header-container {
+    padding-top: 164px;
 }
 
 /* From Bulma */
@@ -97,14 +105,14 @@ a:focus {
 
 /* Media Queries */
 
-/* Slightly larger container on xl screens */
+    /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
     .container {
       max-width: 80%;
     }
   }
 
-  /* fixed top navbar only on medium and up */
+    /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
@@ -112,9 +120,5 @@ a:focus {
         right: 0;
         left: 0;
         z-index: 1030;
-    }
-
-    .header-container {
-        padding-top: 164px;
     }
 }
