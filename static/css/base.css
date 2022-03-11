@@ -55,6 +55,10 @@ a:focus {
     padding-top: 164px;
 }
 
+#artwork-category {
+    color:#000 !important
+}
+
 /* From Bulma */
 
 .icon {
