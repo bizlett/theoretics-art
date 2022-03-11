@@ -24,6 +24,21 @@
             <hr class="w-50 mb-1">
         </div>
     </div>
+
+    <div class="row">
+        <div class="col text-center m-3">
+            <span>
+                <a href="{% url 'artwork' %}?category=art,photography" class="btn rounded text-uppercase px-3 m-2 btn-dark">all</a>
+            </span>
+            <span>
+                <a href="{% url 'artwork' %}?category=art" class="btn rounded text-uppercase px-3 m-2 btn-dark">art</a>
+            </span>
+            <span>
+                <a href="{% url 'artwork' %}?category=photography" class="btn rounded text-uppercase px-3 m-2 btn-dark">photography</a>
+            </span>
+        </div>
+    </div>
+
     <div class="row">
         <div class="product-container col-10 offset-1">
             <div class="row mt-1 mb-2"></div>
