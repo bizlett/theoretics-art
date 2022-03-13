@@ -101,6 +101,12 @@ a:focus {
     color: white !important;
 }
 
+.btt-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
 /* Navbar */
 
 .navbar {
