@@ -1,0 +1,1 @@
+web: gunicorn theoretics_art.wsgi:application
