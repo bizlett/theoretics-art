@@ -5,7 +5,7 @@ from .models import Category, Product, Variation
 class CategoryAdmin(admin.ModelAdmin):
     list_display = (
         'name',
-        'friendly_name'
+        'friendly_name',
     )
 
 
