@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Category, Product, Variation
+from .models import Category, Product, Art, Photography, Size
 
 
 class CategoryAdmin(admin.ModelAdmin):
@@ -14,21 +14,36 @@ class ProductAdmin(admin.ModelAdmin):
         'sku',
         'name',
         'category',
-        'price',
         'image',
     )
 
     ordering = ('sku',)
 
 
-class VariationAdmin(admin.ModelAdmin):
+class ArtAdmin(admin.ModelAdmin):
     list_display = (
         'product',
+        'dimensions',
         'price',
-        'size',
+    )
+
+
+class PhotographyAdmin(admin.ModelAdmin):
+    list_display = (
+        'product',
+    )
+
+
+class SizeAdmin(admin.ModelAdmin):
+    list_display = (
+        'product',
+        'size', 
+        'price',
     )
 
 
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Product, ProductAdmin)
-admin.site.register(Variation, VariationAdmin)
+admin.site.register(Art, ArtAdmin)
+admin.site.register(Photography, PhotographyAdmin)
+admin.site.register(Size, SizeAdmin)
