@@ -1,0 +1,272 @@
+[
+    {
+        "pk": 1, 
+        "model": "products.photography", 
+        "fields": {
+            "name": "Canisp & Suilven",
+            "size": "7x5",
+            "price": 20.00
+        }
+    },
+    {
+        "pk": 2, 
+        "model": "products.photography", 
+        "fields": {
+            "name": "Canisp & Suilven",
+            "size": "8x6 (20x15cm)",
+            "price": 25.00
+        }
+    },
+    {
+        "pk": 3, 
+        "model": "products.photography", 
+        "fields": {
+            "name": "Canisp & Suilven",
+            "size": "10x8 (20.3x25.4cm)",
+            "price": 30.00
+        }
+    },
+    {
+        "pk": 4, 
+        "model": "products.photography", 
+        "fields": {
+            "name": "Dawn Chorus",
+            "size": "7x5 (18x13cm)",
+            "price": 20.00
+        }
+    },
+    {
+        "pk": 5, 
+        "model": "products.photography", 
+        "fields": {
+            "name": "Dawn Chorus",
+            "size": "8x6 (20x15cm)",
+            "price": 25.00
+        }
+    },
+    {
+        "pk": 6, 
+        "model": "products.photography", 
+        "fields": {
+            "name": "Dawn Chorus",
+            "size": "10x8 (20.3x25.4cm)",
+            "price": 30.00
+        }
+    },
+    {
+        "pk": 7, 
+        "model": "products.photography", 
+        "fields": {
+            "name": "Kylesku",
+            "size": "7x5 (18x13cm)",
+            "price": 20.00
+        }
+    },
+    {
+        "pk": 8, 
+        "model": "products.photography", 
+        "fields": {
+            "name": "Kylesku",
+            "size": "8x6 (20x15cm)", 
+            "price": 25.00
+        }
+    },
+    {
+        "pk": 9, 
+        "model": "products.photography", 
+        "fields": {
+            "name": "Kylesku",
+            "size": "10x8 (20.3x25.4cm)",
+            "price": 30.00
+        }
+    },
+    {
+        "pk": 10, 
+        "model": "products.photography", 
+        "fields": {
+            "name": "Pier at Dawn",
+            "size": "7x5 (18x13cm)",
+            "price": 20.00
+        }
+    },
+    {
+        "pk": 11, 
+        "model": "products.photography", 
+        "fields": {
+            "name": "Pier at Dawn",
+            "size": "8x6 (20x15cm)",
+            "price": 25.00
+        }
+    },
+    {
+        "pk": 12, 
+        "model": "products.photography", 
+        "fields": {
+            "name": "Pier at Dawn",
+            "size": "10x8 (20.3x25.4cm)",
+            "price": 30.00
+        }
+    },
+    {
+        "pk": 13, 
+        "model": "products.photography", 
+        "fields": {
+            "name": "Pink",
+            "size": "7x5 (18x13cm)",
+            "price": 20.00
+        }
+    },
+    {
+        "pk": 14, 
+        "model": "products.photography", 
+        "fields": {
+            "name": "Pink",
+            "size": "8x6 (20x15cm)",
+            "price": 25.00
+        }
+    },
+    {
+        "pk": 15, 
+        "model": "products.photography", 
+        "fields": {
+            "name": "Pink",
+            "size": "10x8 (20.3x25.4cm)",
+            "price": 30.00
+        }
+    },
+    {
+        "pk": 16, 
+        "model": "products.photography", 
+        "fields": {
+            "name": "Sea Here", 
+            "size": "7x5 (18x13cm)",
+            "price": 20.00
+        }
+    },
+    {
+        "pk": 17, 
+        "model": "products.photography", 
+        "fields": {
+            "name": "Sea Here", 
+            "size": "8x6 (20x15cm)",
+            "price": 25.00
+        }
+    },
+    {
+        "pk": 18, 
+        "model": "products.photography", 
+        "fields": {
+            "name": "Sea Here", 
+            "size": "10x8 (20.3x25.4cm)",
+            "price": 30.00
+        }
+    },
+    {
+        "pk": 19, 
+        "model": "products.photography", 
+        "fields": {
+            "name": "Silhoutte",
+            "size": "7x5 (18x13cm)",
+            "price": 20.00
+        }
+    },
+    {
+        "pk": 20, 
+        "model": "products.photography", 
+        "fields": {
+            "name": "Silhoutte",
+            "size": "8x6 (20x15cm)",
+            "price": 25.00
+        }
+    },
+    {
+        "pk": 21, 
+        "model": "products.photography", 
+        "fields": {
+            "name": "Silhoutte",
+            "size": "10x8 (20.3x25.4cm)",
+            "price": 30.00
+        }
+    },
+    {
+        "pk": 22, 
+        "model": "products.photography", 
+        "fields": {
+            "name": "Wailing Widow",
+            "size": "7x5 (18x13cm)",
+            "price": 20.00
+        }
+    },
+    {
+        "pk": 23, 
+        "model": "products.photography", 
+        "fields": {
+            "name": "Wailing Widow",
+            "size": "8x6 (20x15cm)",
+            "price": 25.00
+        }
+    },
+    {
+        "pk": 24, 
+        "model": "products.photography", 
+        "fields": {
+            "name": "Wailing Widow",
+            "size": "10x8 (20.3x25.4cm)",
+            "price": 30.00
+        }
+    },
+    {
+        "pk": 25, 
+        "model": "products.photography", 
+        "fields": {
+            "name": "Waiting",
+            "size": "7x5 (18x13cm)",
+            "price": 20.00
+        }
+    },
+    {
+        "pk": 26, 
+        "model": "products.photography", 
+        "fields": {
+            "name": "Waiting",
+            "size": "8x6 (20x15cm)",
+            "price": 25.00
+        }
+    },
+    {
+        "pk": 27, 
+        "model": "products.photography", 
+        "fields": {
+            "name": "Waiting",
+            "size": "10x8 (20.3x25.4cm)",
+            "price": 30.00
+        }
+    },
+    {
+        "pk": 28, 
+        "model": "products.photography", 
+        "fields": {
+            "name": "On the Wings of an Angel",
+            "size": "7x5 (18x13cm)",
+            "price": 20.00
+        }
+    },
+    {
+        "pk": 29, 
+        "model": "products.photography", 
+        "fields": {
+            "name": "On the Wings of an Angel",
+            "size": "8x6 (20x15cm)",
+            "price": 25.00
+        }
+    },
+    {
+        "pk": 30, 
+        "model": "products.photography", 
+        "fields": {
+            "name": "On the Wings of an Angel",
+            "size": "10x8 (20.3x25.4cm)",
+            "price": 30.00
+        }
+    }
+]

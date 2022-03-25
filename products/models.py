@@ -22,6 +22,7 @@ class Product(models.Model):
     sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)
     description = models.TextField()
+    has_sizes = models.BooleanField(default=False, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
 
     def __str__(self):
@@ -29,8 +30,13 @@ class Product(models.Model):
 
 
 class Art(models.Model):
+
+    class Meta:
+        verbose_name_plural = 'Art'
+
     product = models.ForeignKey(
         'Product', null=True, blank=True, on_delete=models.CASCADE)
+    name = models.CharField(max_length=254)
     dimensions = models.CharField(max_length=254, null=True, blank=True)
     price = models.DecimalField(
         max_digits=6, decimal_places=2, null=True, blank=True)
@@ -40,21 +46,18 @@ class Art(models.Model):
 
 
 class Photography(models.Model):
+
+    class Meta:
+        verbose_name_plural = 'Photography'
+
     product = models.ForeignKey(
         'Product', null=True, blank=True, on_delete=models.CASCADE)
-    sku = models.CharField(max_length=254, null=True, blank=True)
-    has_sizes = models.BooleanField(default=False, null=True, blank=True)
+    name = models.CharField(max_length=254)
+    size = models.CharField(max_length=254)
+    price = models.DecimalField(
+        max_digits=6, decimal_places=2, null=True, blank=True)
+    
 
     def __str__(self):
         return self.name
 
-
-class Size(models.Model):
-    product = models.ForeignKey(
-        'Photography', null=True, blank=True, on_delete=models.CASCADE)
-    size = models.CharField(max_length=254)
-    price = models.DecimalField(
-        max_digits=6, decimal_places=2, null=True, blank=True)
-
-    def __str__(self):
-        return self.size

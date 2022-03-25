@@ -1,0 +1,110 @@
+[
+    {
+        "pk": 1, 
+        "model": "products.art", 
+        "fields": {
+            "name": "Birds in Flight", 
+            "dimensions": "100 cm x 50 cm", 
+            "price": 175.00
+        }
+    },
+    {
+        "pk": 2, 
+        "model": "products.art", 
+        "fields": {
+            "name": "Catherine Wheel", 
+            "dimensions": "70 cm x 70 cm", 
+            "price": 175.00
+        }
+    },
+    {
+        "pk": 3, 
+        "model": "products.art", 
+        "fields": {
+            "name": "City", 
+            "dimensions": "30 cm x 30 cm", 
+            "price": 100.00
+        }
+    },
+    {
+        "pk": 4, 
+        "model": "products.art", 
+        "fields": {
+            "name": "Cosmic", 
+            "dimensions": "70 cm x 70 cm", 
+            "price": 174.00
+        }
+    },
+    {
+        "pk": 5, 
+        "model": "products.art", 
+        "fields": {
+            "name": "Eye Opening", 
+            "dimensions": "70 cm x 70 cm", 
+            "price": 175.00
+        }
+    },
+    {
+        "pk": 6, 
+        "model": "products.art", 
+        "fields": {
+            "name": "Fire", 
+            "dimensions": "100 cm x 100 cm", 
+            "price": 275.00
+        }
+    },
+    {
+        "pk": 7, 
+        "model": "products.art", 
+        "fields": {
+            "name": "Grello", 
+            "dimensions": "50 cm x 70 cm", 
+            "price": 150.00
+        }
+    },
+    {
+        "pk": 8, 
+        "model": "products.art", 
+        "fields": {
+            "name": "Headlights", 
+            "dimensions": "50 cm x 60 cm", 
+            "price": 100.00
+        }
+    },
+    {
+        "pk": 9, 
+        "model": "products.art", 
+        "fields": {
+            "name": "Hearts", 
+            "dimensions": "50 cm x 100 cm", 
+            "price": 175.00        
+        }
+    },
+    {
+        "pk": 10, 
+        "model": "products.art", 
+        "fields": {
+            "name": "Squiggle", 
+            "dimensions": "50 cm x 60 cm", 
+            "price": 100.00
+        }
+    },
+    {
+        "pk": 11, 
+        "model": "products.art", 
+        "fields": {
+            "name": "Thatched River", 
+            "dimensions": "50 cm x 70 cm", 
+            "price": 150.00
+        }
+    },
+    {
+        "pk": 12, 
+        "model": "products.art", 
+        "fields": {
+            "name": "Wings (triptych)", 
+            "dimensions": "30 cm x 75 cm", 
+            "price": 100.00
+        }
+    }
+]

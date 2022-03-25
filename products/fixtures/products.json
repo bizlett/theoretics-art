@@ -6,8 +6,6 @@
             "sku": "001", 
             "name": "Birds in Flight", 
             "description": "Spray paint on canvas", 
-            "dimensions": "100 cm x 50 cm", 
-            "price": 175.00,
             "category": 1, 
             "image": "/art/birds-in-flight.jpg"
         }
@@ -19,8 +17,6 @@
             "sku": "002", 
             "name": "Catherine Wheel", 
             "description": "Spray paint on canvas", 
-            "dimensions": "70 cm x 70 cm", 
-            "price": 175.00,
             "category": 1, 
             "image": "/art/catherine-wheel.jpg"
         }
@@ -32,8 +28,6 @@
             "sku": "003", 
             "name": "City", 
             "description": "Acrylic on canvas", 
-            "dimensions": "30 cm x 30 cm", 
-            "price": 100.00,
             "category": 1, 
             "image": "/art/wings.jpg"
         }
@@ -45,8 +39,6 @@
             "sku": "004", 
             "name": "Cosmic", 
             "description": "Acrylic on canvas", 
-            "dimensions": "70 cm x 70 cm", 
-            "price": 174.00,
             "category": 1, 
             "image": "/art/cosmic.jpg"
         }
@@ -58,8 +50,6 @@
             "sku": "005", 
             "name": "Eye Opening", 
             "description": "Acrylic on canvas", 
-            "dimensions": "70 cm x 70 cm", 
-            "price": 175.00,
             "category": 1, 
             "image": "/art/eye-opening.jpg"
         }
@@ -71,8 +61,6 @@
             "sku": "006", 
             "name": "Fire", 
             "description": "Acrylic on canvas", 
-            "dimensions": "100 cm x 100 cm", 
-            "price": 275.00,
             "category": 1, 
             "image": "/art/fire.jpg"
         }
@@ -84,8 +72,6 @@
             "sku": "007", 
             "name": "Grello", 
             "description": "Acrylic & spray paint on canvas", 
-            "dimensions": "50 cm x 70 cm", 
-            "price": 150.00,
             "category": 1, 
             "image": "/art/grello.jpg"
         }
@@ -97,8 +83,6 @@
             "sku": "008", 
             "name": "Headlights", 
             "description": "Acrylic & spray paint on canvas", 
-            "dimensions": "50 cm x 60 cm", 
-            "price": 100.00,
             "category": 1, 
             "image": "/art/headlights.jpg"
         }
@@ -110,8 +94,6 @@
             "sku": "009", 
             "name": "Hearts", 
             "description": "Spray paint on canvas", 
-            "dimensions": "50 cm x 100 cm", 
-            "price": 175.00,
             "category": 1, 
             "image": "/art/hearts.jpg"
         }
@@ -123,8 +105,6 @@
             "sku": "010", 
             "name": "Squiggle", 
             "description": "Acrylic & spray paint on canvas", 
-            "dimensions": "50 cm x 60 cm", 
-            "price": 100.00,
             "category": 1, 
             "image": "/art/squiggle.jpg"
         }
@@ -136,8 +116,6 @@
             "sku": "011", 
             "name": "Thatched River", 
             "description": "Acrylic & spray paint on canvas", 
-            "dimensions": "50 cm x 70 cm", 
-            "price": 150.00,
             "category": 1, 
             "image": "/art/thatched-river.jpg"
         }
@@ -149,8 +127,6 @@
             "sku": "012", 
             "name": "Wings (triptych)", 
             "description": "Acrylic & spray paint on canvas", 
-            "dimensions": "30 cm x 75 cm", 
-            "price": 100.00,
             "category": 1, 
             "image": "/art/wings.jpg"
         }
@@ -162,8 +138,6 @@
             "sku": "013", 
             "name": "Canisp & Suilven", 
             "description": "Reflections in water of Canisp and Suilven in the Scottish Highlands", 
-            "dimensions": "", 
-            "price": 0.00,
             "category": 2, 
             "image": "/photography/canisp-suilven.jpg"
         }
@@ -175,8 +149,6 @@
             "sku": "014", 
             "name": "Dawn Chorus", 
             "description": "Sunrise at Dunnet Beach, Scottish Highlands", 
-            "dimensions": "", 
-            "price": 0.00,
             "category": 2, 
             "image": "/photography/dawn-chorus.jpg"
         }
@@ -188,8 +160,6 @@
             "sku": "015", 
             "name": "Kylesku", 
             "description": "A view of Kylesku brskuge, Scottish Highlands", 
-            "dimensions": "", 
-            "price": 0.00,
             "category": 2, 
             "image": "/photography/kylesku.jpg"
         }
@@ -201,8 +171,6 @@
             "sku": "016", 
             "name": "Pier at Dawn", 
             "description": "Penarth pier at first light", 
-            "dimensions": "", 
-            "price": 0.00,
             "category": 2, 
             "image": "/photography/pier-at-dawn.jpg"
         }
@@ -214,8 +182,6 @@
             "sku": "017", 
             "name": "Pink", 
             "description": "Sunrise pink over Bristol Channel", 
-            "dimensions": "", 
-            "price": 0.00,
             "category": 2, 
             "image": "/photography/pink.jpg"
         }
@@ -227,8 +193,6 @@
             "sku": "018", 
             "name": "Sea Here", 
             "description": "Long exposure of tskues under Penarth Pier", 
-            "dimensions": "", 
-            "price": 0.00,
             "category": 2, 
             "image": "/photography/sea-here.jpg"
         }
@@ -240,8 +204,6 @@
             "sku": "019", 
             "name": "Silhoutte", 
             "description": "On the pier at Penarth", 
-            "dimensions": "", 
-            "price": 0.00,
             "category": 2, 
             "image": "/photography/silhouette.jpg"
         }
@@ -252,11 +214,9 @@
         "fields": {
             "sku": "020", 
             "name": "Wailing Wskuow", 
-            "description": "The powerful Wailing Wskuow waterfall in the Scottish Highlands", 
-            "dimensions": "", 
-            "price": 0.00,
+            "description": "The powerful Wailing Widows waterfall in the Scottish Highlands", 
             "category": 2, 
-            "image": "/photography/wailing-wskuow.jpg"
+            "image": "/photography/wailing-widow.jpg"
         }
     },
     {
@@ -266,8 +226,6 @@
             "sku": "021", 
             "name": "Waiting", 
             "description": "Onlookers wait for the swimmers to emerge from the sea at Penarth seafront", 
-            "dimensions": "", 
-            "price": 0.00,
             "category": 2, 
             "image": "/photography/waiting.jpg"
         }
@@ -279,8 +237,6 @@
             "sku": "022", 
             "name": "On the Wings of an Angel", 
             "description": "A biblical cloud formation at Lyn y Fan Fach, Wales", 
-            "dimensions": "", 
-            "price": 0.00,
             "category": 2, 
             "image": "/photography/wings-of-an-angel.jpg"
         }
