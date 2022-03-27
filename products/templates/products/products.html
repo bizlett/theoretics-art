@@ -84,13 +84,15 @@
                             <div class="card-footer bg-white pt-0 border-0 text-left">
                                 <div class="row">
                                     <div class="col">
-                                        {% if product.dimensions %}
+                                        {% if product.art %}
                                             <small class="text-muted">{{ product.dimensions }}</small>
+                                            <small class="text-muted">{{ product.price }}</small>
                                         {% else %}
                                             <form class="form" method="GET" action="">
                                                 <select name="size" class="form-control">
-                                                    {% for product in product.variation_set.all %}
+                                                    {% for product in product.photography_set.all %}
                                                         <option value="{{ product.size }}">{{ product.size }}</option>
+                                                        <option value="{{ product.price }}">{{ product.price }}</option>
                                                     {% endfor %}
                                                 </select>  
                                             </form>
