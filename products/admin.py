@@ -23,6 +23,7 @@ class ProductAdmin(admin.ModelAdmin):
 class ArtAdmin(admin.ModelAdmin):
     list_display = (
         'product',
+        'name',
         'dimensions',
         'price',
     )
@@ -31,6 +32,7 @@ class ArtAdmin(admin.ModelAdmin):
 class PhotographyAdmin(admin.ModelAdmin):
     list_display = (
         'product',
+        'name',
         'size',
         'price',
     )

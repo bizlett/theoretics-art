@@ -12,6 +12,8 @@ def all_products(request):
     """ A view to show all products, including sorting and search queries """
 
     products = Product.objects.all()
+    art = Art.objects.all()
+    photography = Photography.objects.all()
     query = None
     categories = None
     sort = None
@@ -50,6 +52,8 @@ def all_products(request):
 
     context = {
         'products': products,
+        'art': art,
+        'photography': photography,
         'search_term': query,
         'current_categories': categories,
         'current_sorting': current_sorting,
@@ -62,9 +66,13 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
+    art = get_object_or_404(Art, pk=product_id)
+    photography = get_object_or_404(Photography, pk=product_id)
 
     context = {
         'product': product,
+        'art': art,
+        'photography': photography
     }
 
     return render(request, 'products/product_detail.html', context)

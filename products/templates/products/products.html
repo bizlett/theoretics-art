@@ -84,18 +84,22 @@
                             <div class="card-footer bg-white pt-0 border-0 text-left">
                                 <div class="row">
                                     <div class="col">
-                                        {% if product.art %}
-                                            <small class="text-muted">{{ product.dimensions }}</small>
-                                            <small class="text-muted">{{ product.price }}</small>
-                                        {% else %}
-                                            <form class="form" method="GET" action="">
-                                                <select name="size" class="form-control">
-                                                    {% for product in product.photography_set.all %}
-                                                        <option value="{{ product.size }}">{{ product.size }}</option>
-                                                        <option value="{{ product.price }}">{{ product.price }}</option>
-                                                    {% endfor %}
-                                                </select>  
-                                            </form>
+                                        {% if product.category.name == "art" %}
+                                            {% for art_piece in art %}
+                                                {% if art_piece.name == product.name %}
+                                                    <small class="text-muted">{{ art_piece.price }}</small>
+                                                    <small class="text-muted">{{ art_piece.dimensions }}</small>
+                                                {% endif %}
+                                            {% endfor %}
+                                        {% endif %}
+                                        {% if product.category.name == "photography" %}
+                                            <select name="size" id="">
+                                                {% for art_piece in photography %}
+                                                    {% if art_piece.name == product.name %}
+                                                        <option value="{{ art_piece.price }}">{{ art_piece.size }} - £{{ art_piece.price }}</option>
+                                                    {% endif %}
+                                                {% endfor %} 
+                                            </select>     
                                         {% endif %}
 
                                         {% if product.category %}
@@ -105,8 +109,6 @@
                                                 </a>
                                             </p>
                                         {% endif %}
-
-                                        <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
 
                                         {% if request.user.is_superuser %}
                                             <small class="ml-3">

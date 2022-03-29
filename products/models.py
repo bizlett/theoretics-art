@@ -18,7 +18,7 @@ class Category(models.Model):
 
 class Product(models.Model):
     category = models.ForeignKey(
-        'Category', null=True, blank=True, on_delete=models.SET_NULL)
+        Category, null=True, blank=True, on_delete=models.SET_NULL)
     sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)
     description = models.TextField()
@@ -35,7 +35,7 @@ class Art(models.Model):
         verbose_name_plural = 'Art'
 
     product = models.ForeignKey(
-        'Product', null=True, blank=True, on_delete=models.CASCADE)
+        Product, null=True, blank=True, on_delete=models.CASCADE, related_name='art')
     name = models.CharField(max_length=254)
     dimensions = models.CharField(max_length=254, null=True, blank=True)
     price = models.DecimalField(
