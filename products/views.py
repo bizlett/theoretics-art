@@ -39,15 +39,6 @@ def all_products(request):
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
 
-        if 'q' in request.GET:
-            query = request.GET['q']
-            if not query:
-                messages.error(request, "You didn't enter any search criteria!")
-                return redirect(reverse('products'))
-            
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
-            products = products.filter(queries)
-
     current_sorting = f'{sort}_{direction}'
 
     context = {
@@ -66,14 +57,14 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
-    art = get_object_or_404(Art, pk=product_id)
-    photography = get_object_or_404(Photography, pk=product_id)
+    art = Art.objects.all()
+    photography = Photography.objects.all()
 
     context = {
-        'product': product,
-        'art': art,
-        'photography': photography
-    }
+            'product': product,
+            'art': art,
+            'photography': photography,
+        }
 
     return render(request, 'products/product_detail.html', context)
 

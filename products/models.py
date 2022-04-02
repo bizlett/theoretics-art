@@ -22,7 +22,7 @@ class Product(models.Model):
     sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)
     description = models.TextField()
-    has_sizes = models.BooleanField(default=False, null=True, blank=True)
+    # has_sizes = models.BooleanField(default=False, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
 
     def __str__(self):
@@ -51,7 +51,7 @@ class Photography(models.Model):
         verbose_name_plural = 'Photography'
 
     product = models.ForeignKey(
-        'Product', null=True, blank=True, on_delete=models.CASCADE)
+        Product, null=True, blank=True, on_delete=models.CASCADE)
     name = models.CharField(max_length=254)
     size = models.CharField(max_length=254)
     price = models.DecimalField(
