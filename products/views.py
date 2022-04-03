@@ -8,13 +8,13 @@ from .forms import ProductForm
 
 
 def all_products(request):
-    """ A view to show all products, including sorting queries """
+    """ A view to show all products, including sorting and search queries """
 
     products = Product.objects.all()
     art = Art.objects.all()
     photography = Photography.objects.all()
     categories = None
-
+            
     if 'category' in request.GET:
         categories = request.GET['category'].split(',')
         products = products.filter(category__name__in=categories)
