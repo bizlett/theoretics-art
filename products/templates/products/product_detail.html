@@ -41,27 +41,15 @@
                 {% endif %}
 
                 {% if product.category.name == "photography" %}
-                    <select name="size" id="">
+                    <select name="photo_size" class="photo_size" onchange="choose_photo_size_and_price()">
                         {% for art_piece in photography %}
                             {% if art_piece.name == product.name %}
-                                <option value="{{ art_piece.price }}">{{ art_piece.size }} - £{{ art_piece.price }}</option>
+                                <option value="{{ art_piece.price }}">{{ art_piece.size }}</option>
                             {% endif %}
                         {% endfor %}
                     </select>
+                    <input type="text" class="photo_size_price">
                 {% endif %}
-
-                <!-- <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
-                    {% if product.dimensions %}
-                    <small class="text-muted">{{ product.dimensions }}</small>
-                    {% else %}
-                    <form class="form" method="GET" action="">
-                        <select name="size" class="form-control">
-                            {% for product in product.variation_set.all %}
-                            <option value="{{ product.size }}">{{ product.size }}</option>
-                            {% endfor %}
-                        </select>
-                    </form>
-                    {% endif %} -->
 
                 {% if product.category %}
                 <p class="small mt-1 mb-0">
@@ -77,20 +65,11 @@
                 </small>
                 {% endif %}
                 <p class="mt-3">{{ product.description }}</p>
+                
                 <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                     {% csrf_token %}
                     <div class="form-row">
                         {% with product.has_sizes as size %}
-                        {% if size %}
-                        <div class="col-12">
-                            <p><strong>Size:</strong></p>
-                            <select class="form-control rounded w-50" name="product_size" id='id_product_size'>
-                                <option value="7x5" selected>7" x 5"</option>
-                                <option value="8x6">8" x 6"</option>
-                                <option value="10x8">10" x 8"</option>
-                            </select>
-                        </div>
-                        {% endif %}
                         <div class="col-12">
                             <p class="mt-3"><strong>Quantity:</strong></p>
                             <div class="form-group w-50">
@@ -137,5 +116,6 @@
 
 {% block postloadjs %}
 {{ block.super }}
+{% include 'products/includes/photo_size_price_script.html' %}
 {% include 'products/includes/quantity_input_script.html' %}
 {% endblock %}
