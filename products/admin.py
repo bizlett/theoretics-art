@@ -11,13 +11,10 @@ class CategoryAdmin(admin.ModelAdmin):
 
 class ProductAdmin(admin.ModelAdmin):
     list_display = (
-        'sku',
         'name',
         'category',
         'image',
     )
-
-    ordering = ('sku',)
 
 
 class ArtAdmin(admin.ModelAdmin):
