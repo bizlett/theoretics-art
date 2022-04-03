@@ -33,7 +33,7 @@
                 {% if product.category.name == "art" %}
                     {% for art_piece in art %}
                         {% if art_piece.name == product.name %}
-                            <p class="lead mb-0 text-left font-weight-bold">${{ art_piece.price }}</p>
+                            <p class="lead mb-0 text-left font-weight-bold">£{{ art_piece.price }}</p>
                             <small class="text-muted">{{ art_piece.dimensions }}</small>
                         {% endif %}
                     {% endfor %}
@@ -47,7 +47,7 @@
                             {% endif %}
                         {% endfor %}
                     </select>
-                    <input type="text" class="photo_size_price">
+                    £<input type="text" class="photo_size_price">
                 {% endif %}
 
                 {% if product.category %}

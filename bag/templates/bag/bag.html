@@ -44,15 +44,44 @@
                                         {% else %}
                                             <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
                                         {% endif %}
-                                        <img class="img-fluid rounded" src="{{ item.product.image.url }}">
                                     </td>
                                     <td class="py-3">
                                         <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                                        <p class="my-0"><strong>Size: </strong>{% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
-                                        <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
+                                        {% if item.product.category.name == "art" %}
+                                                {% for art_piece in art %}
+                                                    {% if art_piece.name == item.product.name %}
+                                                        <small class="text-muted">{{ item.art_piece.dimensions }}</small>
+                                                    {% endif %}
+                                                {% endfor %}
+                                            {% endif %}
+                                            {% if item.product.category.name == "photography" %}
+                                                <select name="size" id="">
+                                                    {% for art_piece in photography %}
+                                                        {% if art_piece.name == item.product.name %}
+                                                            <option value="{{ item.art_piece.price }}">{{ item.art_piece.size }} - £{{ item.art_piece.price }}</option>
+                                                        {% endif %}
+                                                    {% endfor %} 
+                                                </select>     
+                                            {% endif %}
                                     </td>
                                     <td class="py-3">
-                                        <p class="my-0">£{{ item.product.price }}</p>
+                                        {% if item.product.category.name == "art" %}
+                                                {% for art_piece in art %}
+                                                    {% if art_piece.name == item.product.name %}
+                                                        <small class="text-muted">{{ item.art_piece.price }}</small>
+                                                        <small class="text-muted">{{ item.art_piece.dimensions }}</small>
+                                                    {% endif %}
+                                                {% endfor %}
+                                            {% endif %}
+                                            {% if item.product.category.name == "photography" %}
+                                                <select name="size" id="">
+                                                    {% for art_piece in photography %}
+                                                        {% if art_piece.name == item.product.name %}
+                                                            <option value="{{ item.art_piece.price }}">{{ item.art_piece.size }} - £{{ item.art_piece.price }}</option>
+                                                        {% endif %}
+                                                    {% endfor %} 
+                                                </select>     
+                                            {% endif %}
                                     </td>
                                     <td class="py-3 w-25">
                                         <form class="form update-form" method="POST" action="">
@@ -79,9 +108,9 @@
                                                             </span>
                                                         </button>
                                                     </div>
-                                                    {% if item.product.has_sizes %}
+                                                    <!-- {% if item.product.has_sizes %}
                                                         <input type="hidden" name="product_size" value="{{ item.size }}">
-                                                    {% endif %}
+                                                    {% endif %} -->
                                                 </div>
                                             </div>
                                         </form>
@@ -90,7 +119,7 @@
 
                                     </td>
                                     <td class="py-3">
-                                        <p class="my-0">£{{ item.product.price | calc_subtotal:item.quantity }}</p>
+                                        <!-- <p class="my-0">£{{ item.product.price | calc_subtotal:item.quantity }}</p> -->
                                     </td>
                                 </tr>
                             {% endfor %}
