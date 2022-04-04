@@ -50,40 +50,36 @@
                                         {% if item.product.category.name == "art" %}
                                                 {% for art_piece in art %}
                                                     {% if art_piece.name == item.product.name %}
-                                                        <small class="text-muted">{{ item.art_piece.dimensions }}</small>
+                                                        <small class="text-muted">{{ art_piece.dimensions }}</small>
                                                     {% endif %}
                                                 {% endfor %}
                                             {% endif %}
                                             {% if item.product.category.name == "photography" %}
-                                                <select name="size" id="">
                                                     {% for art_piece in photography %}
-                                                        {% if art_piece.name == item.product.name %}
-                                                            <option value="{{ item.art_piece.price }}">{{ item.art_piece.size }} - £{{ item.art_piece.price }}</option>
+                                                        {% if art_piece.name == product.name %}
+                                                        <small class="text-muted">{{ art_piece.size }}</small>
                                                         {% endif %}
                                                     {% endfor %} 
-                                                </select>     
                                             {% endif %}
                                     </td>
                                     <td class="py-3">
                                         {% if item.product.category.name == "art" %}
                                                 {% for art_piece in art %}
                                                     {% if art_piece.name == item.product.name %}
-                                                        <small class="text-muted">{{ item.art_piece.price }}</small>
-                                                        <small class="text-muted">{{ item.art_piece.dimensions }}</small>
+                                                        <small class="text-muted">{{ art_piece.price }}</small>
                                                     {% endif %}
                                                 {% endfor %}
                                             {% endif %}
                                             {% if item.product.category.name == "photography" %}
-                                                <select name="size" id="">
                                                     {% for art_piece in photography %}
                                                         {% if art_piece.name == item.product.name %}
-                                                            <option value="{{ item.art_piece.price }}">{{ item.art_piece.size }} - £{{ item.art_piece.price }}</option>
+                                                        <small class="text-muted">{{ item.art_piece.price }}</small>
                                                         {% endif %}
                                                     {% endfor %} 
-                                                </select>     
                                             {% endif %}
                                     </td>
                                     <td class="py-3 w-25">
+                                        {% if item.product.category.name == "photography" %}
                                         <form class="form update-form" method="POST" action="">
                                             {% csrf_token %}
                                             <div class="form-group">
@@ -108,6 +104,11 @@
                                                             </span>
                                                         </button>
                                                     </div>
+                                                {% else %}
+
+                                                <small>N/A - original artwork only 1 available</small>
+
+                                                {% endif %}
                                                     <!-- {% if item.product.has_sizes %}
                                                         <input type="hidden" name="product_size" value="{{ item.size }}">
                                                     {% endif %} -->
