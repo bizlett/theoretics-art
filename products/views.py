@@ -14,7 +14,6 @@ def all_products(request):
     art = Art.objects.all()
     photography = Photography.objects.all()
     categories = None
-            
     if 'category' in request.GET:
         categories = request.GET['category'].split(',')
         products = products.filter(category__name__in=categories)
@@ -63,7 +62,6 @@ def add_product(request):
             messages.error(request, 'Failed to add product. Please ensure the form is valid.')
     else:
         form = ProductForm()
-        
     template = 'products/add_product.html'
     context = {
         'form': form,
