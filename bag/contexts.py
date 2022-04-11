@@ -5,18 +5,19 @@ from products.models import Product, Art, Photography
 
 
 def bag_contents(request):
-
+    """
+    The items you have added to your bag
+    """
     bag_items = []
     total = 0
     product_count = 0
     delivery = total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)
     bag = request.session.get('bag', {})
+    art = Art.objects.all()
+    photography = Photography.objects.all()
 
     for item_id, quantity in bag.items():
         product = get_object_or_404(Product, pk=item_id)
-        art = Art.objects.all()
-        photography = Photography.objects.all()
-
         if product.category.name == "art":
             for art_piece in art:
                 if art_piece.name == product.name:
@@ -26,14 +27,12 @@ def bag_contents(request):
                 for art_piece in photography:
                     if art_piece.name == product.name:
                         total += quantity * art_piece.price
-        
         product_count += quantity
         bag_items.append({
             'item_id': item_id,
             'quantity': quantity,
             'product': product,
         })
-    
     grand_total = delivery + total
 
     context = {
@@ -45,5 +44,3 @@ def bag_contents(request):
         'art': art,
         'photography': photography,
     }
-
-    return context
