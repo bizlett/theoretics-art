@@ -21,7 +21,7 @@ class Product(models.Model):
         Category, null=True, blank=True, on_delete=models.SET_NULL)
     name = models.CharField(max_length=254)
     description = models.TextField()
-    # has_sizes = models.BooleanField(default=False, null=True, blank=True)
+    has_sizes = models.BooleanField(default=False, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
 
     def __str__(self):
